@@ -1,14 +1,20 @@
+import { Routes,Route } from 'react-router-dom'
 import './App.css'
-import Button from '@mui/material/Button';
+import About from './pages/About'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
+import Home from './pages/Home'
 
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-red-400">
-        Hello world!
-      </h1>
-      <Button variant="contained" color="success">Hello world</Button>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About />}/>
+        <Route path='/projects' element={<Projects/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+      </Routes>
     </>
   )
 }
