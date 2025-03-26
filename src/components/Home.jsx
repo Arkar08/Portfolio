@@ -10,7 +10,7 @@ const Home = () => {
   }
 
   return (
-    <div className='home'>
+    <div className='layout'>
         <div className='profileText'>
             <h3 className='text-[#FFBD39] text-xl'>Hello</h3>
             <h1 className='text-white'>I'm a <span className='text-[#FFBD39]'>Mid-Level Developer</span></h1>
