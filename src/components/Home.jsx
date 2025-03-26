@@ -18,7 +18,7 @@ const Home = () => {
             <h1 className='text-white'>Based in <span className='text-[#FFBD39]'>Yangon.</span></h1>
             <div className='btnGroup'>
               <button className='download shadow-white shadow-md' onClick={postContact}>Hire Me</button>
-              <button className='download1 shadow-white shadow-md'>Download CV</button>
+              <a href='Resume.pdf' className='download1 shadow-white shadow-md' download>Download CV</a>
             </div>
         </div>
         <div>

@@ -47,6 +47,8 @@ li{
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
 }
 .download:hover{
     background-color: white;
@@ -70,6 +72,8 @@ li{
 .profile_image{
     width: 500px;
     height: 500px;
+    object-fit: contain;
+    object-position: center;
 }
 h1{
     font-size: 50px;
@@ -90,6 +94,7 @@ span{
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
+    text-align: center;
 }
 .download1:hover{
     background-color: #FFBD39;

@@ -42,7 +42,7 @@ const Navbar = () => {
                     textDecoration: isActive ?"underline":'none',
                 })}>Contact</NavLink>
           </li>
-          <button className='download shadow-md shadow-white'>Download CV</button>
+          <a href='Resume.pdf' className='download shadow-md shadow-white' download>Download CV</a>
         </ul>
     </div>
   )
