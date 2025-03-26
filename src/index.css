@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Roboto", sans-serif ;
+    list-style: none;
+    background-color: rgb(44, 43, 43);
+}
+
+body{
+    position: relative;
+}
+
+.header{
+    height: 80px;
+    padding:0px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    padding: 10px;
+}
+.link{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.download{
+    width: 150px;
+    padding: 10px;
+    background-color: #FFBD39;
+    border-radius: 10px;
+    color: darkblue;
+    margin-left: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.download:hover{
+    background-color: white;
+    color: black;
+}
+
+/* home css */
+.home{
+    display: flex;
+    justify-content: space-around;
+    padding:30px;
+}
+.btnGroup{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+.profileText{
+    margin-top: 50px;
+}
+.profile_image{
+    width: 500px;
+    height: 500px;
+}
+h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+span{
+    font-size: 60px;
+    font-weight: 500;
+}
+.download1{
+    width: 150px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    margin-left: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.download1:hover{
+    background-color: #FFBD39;
+    color: darkblue;
+}
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    border-top: 0.5px solid gray;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.logoContainer{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
