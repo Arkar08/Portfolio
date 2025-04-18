@@ -1,5 +1,3 @@
-
-import {Outlet, Route, Routes } from 'react-router-dom'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -14,18 +12,25 @@ function App() {
   return (
     <>
       <Navbar/>
-      <div className='pageContext'>
-        <Outlet />
-      </div>
       <div className='route'>
-          <Routes>
-            <Route path='/' element={<Home />}/>
-            <Route path='/about' element={<About />}/>
-            <Route path='/service' element={<Service />}/>
-            <Route path='/skill' element={<Skill />}/>
-            <Route path='/Project' element={<Project />}/>
-            <Route path='/Contact' element={<Contact />}/>
-          </Routes>
+          <section id='home'>
+            <Home />
+          </section>
+          <section id='about'>
+            <About />
+          </section>
+          <section id='service'>
+            <Service />
+          </section>
+          <section id='mySkill'>
+            <Skill />
+          </section>
+          <section id='projects'>
+            <Project />
+          </section>
+          <section id='contact'>
+            <Contact />
+          </section>
       </div>
       <Footer/>
     </>

@@ -1,46 +1,49 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+
 
 const Navbar = () => {
+
+  const [activeSection,setActiveSection] = useState('home')
+
+
+  useEffect(()=>{
+    const handleScroll = ()=>{
+      const sections = document.querySelectorAll('section')
+      sections.forEach((section)=>{
+        const rect = section.getBoundingClientRect()
+        if(rect.top <= 110 && rect.bottom >= 100){
+          setActiveSection(section.id)
+        }
+      })
+    }
+    window.addEventListener('scroll',handleScroll)
+    return ()=> window.removeEventListener('scroll',handleScroll)
+  },[])
+
+ 
+
+
   return (
     <div className="header shadow-lg">
-      <Link className='text-white text-3xl font-bold' to='/'>Portfolio</Link>
+      <a  href='#home' className='text-white text-3xl font-bold'>Portfolio</a>
         <ul>
           <li>
-              <NavLink to="/" className='link' style={({ isActive }) => ({
-                    color: isActive ? "#FFBD39" : "white",
-                    textDecoration: isActive ?"underline":'none',
-                })}>Home</NavLink>
+              <a href="#home" className={activeSection === 'home' ? 'isActive':'link'}>Home</a>
           </li>
           <li>
-              <NavLink to="/about" className='link' style={({ isActive }) => ({
-                    color: isActive ? "#FFBD39" : "white",
-                    textDecoration: isActive ?"underline":'none',
-                })}>About</NavLink> 
+              <a href="#about" className={activeSection === 'about' ? 'isActive':'link'} >About</a>  
           </li>
           <li>
-              <NavLink to="/service" className='link' style={({ isActive }) => ({
-                    color: isActive ? "#FFBD39" : "white",
-                    textDecoration: isActive ?"underline":'none',
-                })}>Service</NavLink>
+              <a href='#service' className={activeSection === 'service' ? 'isActive':'link'}>Service</a>
           </li>
           <li>
-              <NavLink to="/skill" className='link' style={({ isActive }) => ({
-                    color: isActive ? "#FFBD39" : "white",
-                    textDecoration: isActive ?"underline":'none',
-                })}>My Skill</NavLink>
+              <a href='#mySkill' className={activeSection === 'mySkill' ? 'isActive':'link'}>My Skill</a>
           </li>
           <li>
-              <NavLink to="/project" className='link' style={({ isActive }) => ({
-                    color: isActive ? "#FFBD39" : "white",
-                    textDecoration: isActive ?"underline":'none',
-                })}>Projects</NavLink>
+              <a href='#projects' className={activeSection === 'projects' ? 'isActive':'link'}>Projects</a>
           </li>
           <li>
-              <NavLink to="/contct" className='link' style={({ isActive }) => ({
-                    color: isActive ? "#FFBD39" : "white",
-                    textDecoration: isActive ?"underline":'none',
-                })}>Contact</NavLink>
+              <a href='#contact' className={activeSection === 'contact' ? 'isActive':'link'}>Contact</a>
           </li>
           <a href='Resume.pdf' className='download shadow-md shadow-white' download>Download CV</a>
         </ul>

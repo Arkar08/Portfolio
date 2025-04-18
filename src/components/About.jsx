@@ -7,7 +7,7 @@ const About = () => {
         <img src="girl1.jpg" alt="profile_img" className='profile_image'/>
       </div>
       <div>
-        <h1 className='text-white font-bold text-center'>About Me</h1>
+        <h1 className='text-white font-bold text-left'>About Me</h1>
         <p>I'm Frontend Developer with Reactjs, Angular And Node.js. </p>
         <div className='aboutText'>
           <div>
