@@ -8,15 +8,15 @@ const Contact = () => {
 
   return (
     <div className='contactContainer'>
-      <h3 className='text-[#FFBD39] text-3xl text-center'>Contact Form</h3>
+      <h1 className='text-[#FFBD39] text-4xl text-center'>Contact Me</h1>
       <form>
         <div className='inputContainer'>
           <label htmlFor="name">Name</label>
-          <input type="text" placeholder='Name'/>
+          <input type="text" placeholder='Your Name'/>
         </div>
         <div className='inputContainer'>
           <label htmlFor="name">Email</label>
-          <input type="text" placeholder='Email'/>
+          <input type="text" placeholder='Your Email'/>
         </div>
         <div className='inputContainer'>
           <label htmlFor="name">Subject</label>
@@ -27,7 +27,7 @@ const Contact = () => {
           <textarea placeholder='Message'></textarea>
         </div>
         <div className='sendContainer'>
-          <button type='submit' className='send' onClick={sendEmail}>Send</button>
+          <button type='submit' className='send' onClick={sendEmail}>Send Message</button>
         </div>
       </form>
     </div>

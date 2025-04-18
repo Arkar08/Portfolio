@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div className="header shadow-lg">
-      <a  href='#home' className='text-white text-3xl font-bold'>Portfolio</a>
+      <a  href='#home' className='text-[#FFBD39] text-3xl font-bold'>Portfolio</a>
         <ul>
           <li>
               <a href="#home" className={activeSection === 'home' ? 'isActive':'link'}>Home</a>
@@ -43,7 +43,7 @@ const Navbar = () => {
               <a href='#projects' className={activeSection === 'projects' ? 'isActive':'link'}>Projects</a>
           </li>
           <li>
-              <a href='#contact' className={activeSection === 'contact' ? 'isActive':'link'}>Contact</a>
+              <a href='#contact' className={activeSection === 'contact' ? 'isActive':'link'}>Contact Me</a>
           </li>
           <a href='Resume.pdf' className='download shadow-md shadow-white' download>Download CV</a>
         </ul>

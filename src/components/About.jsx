@@ -3,12 +3,18 @@ import React from 'react'
 const About = () => {
   return (
     <div className='layout1'>
-      <div>
+      <div className='profileContainer'>
         <img src="girl1.jpg" alt="profile_img" className='profile_image'/>
       </div>
       <div>
-        <h1 className='text-white font-bold text-left'>About Me</h1>
-        <p>I'm Frontend Developer with Reactjs, Angular And Node.js. </p>
+        <h1 className='text-[#FFBD39] text-left'>About Me</h1>
+        <p>I have a strong foundation in HTML,
+            CSS, JavaScript, jQuery, React, Angular, and Node.js. With a
+            keen eye for design and a solid grasp of web development
+            principles, I thrive in collaborative settings and enjoy working
+            with diverse teams. I am dedicated to keeping up with the
+            latest trends and expanding my skills in front-end
+            development.</p>
         <div className='aboutText'>
           <div>
             <h3 className='text'>Name:</h3>

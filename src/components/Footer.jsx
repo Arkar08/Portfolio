@@ -4,13 +4,19 @@ const Footer = () => {
   return (
     <div className='footer'>
         <div className='logoContainer'>
-          <img src="github-brands (2).svg" alt="github"  className='logoImage'/>
+          <a href="">
+            <img src="github-brands (2).svg" alt="github"  className='logoImage'/>
+          </a>
         </div>
         <div className='logoContainer'>
-          <img src="facebook-brands.svg" alt="github"  className='logoImage'/>
+          <a href="">
+            <img src="facebook-brands.svg" alt="github"  className='logoImage'/>
+          </a>
         </div>
         <div className='logoContainer'>
-          <img src="linkedin-brands.svg" alt="github"  className='logoImage'/>
+          <a href="">
+            <img src="linkedin-brands.svg" alt="github"  className='logoImage'/>
+          </a>
         </div>
     </div>
   )

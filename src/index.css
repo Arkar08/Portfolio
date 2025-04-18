@@ -9,7 +9,7 @@
     list-style: none;
     background-color: rgb(70, 69, 69);
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 100px;
 }
 
 body{
@@ -47,6 +47,7 @@ li{
     font-weight: 400;
     letter-spacing: 1px;
     transition: all 0.3s ease-in-out;
+    border-bottom: 3px solid #FFBD39;
 }
 .download{
     width: 150px;
@@ -74,7 +75,7 @@ li{
     padding:30px;
 }
 section{
-    height:calc(100vh - 110px);
+    height:calc(100vh - 90px);
 }
 .btnGroup{
     margin-top: 30px;
@@ -83,6 +84,9 @@ section{
 }
 .profileText{
     margin-top: 50px;
+}
+.profileContainer{
+    width: 1000px;
 }
 .profile_image{
     width: 500px;
@@ -174,6 +178,165 @@ p{
     text-decoration: none;
 }
 
+/* service */
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.card{
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px whitesmoke;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+}
+.card:hover{
+    background-color: #FFBD39;
+    color: black;
+
+    .cardText{
+        background-color: #FFBD39;
+        color: black;
+    }
+    .line{
+        background-color: black;
+    }
+}
+
+.cardText{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,40%);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    text-wrap: nowrap;
+}
+.cardText:hover{
+    background-color: #FFBD39 !important;
+    color: black;
+}
+.line{
+    width: 80px;
+    height: 2px;
+    background-color: #FFBD39;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,70%);
+}
+
+/* skill */
+.progreess{
+    width: 600px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: gray;
+    margin-top: 10px;
+}
+
+.skillContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.label{
+    color: white;
+}
+
+.skill{
+    margin-top: 20px;
+}
+
+.progreesLine{
+    width: 90%;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #FFBD39;
+}
+
+.progreesLine1{
+    width:85%;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #FFBD39;
+}
+
+.progreesLine2{
+    width:85%;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #FFBD39;
+}
+.progreesLine3{
+    width:90%;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #FFBD39;
+}
+.progreesLine4{
+    width:75%;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #FFBD39;
+}
+.progreesLine5{
+    width:85%;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #FFBD39;
+}
+.progreesLine6{
+    width:55%;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #FFBD39;
+}
+.progreesLine7{
+    width:70%;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #FFBD39;
+}
+
+
+/* project */
+.projectContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 98%;
+    margin-top: 20px;
+}
+
+.projectCard{
+    height: 150px;
+    box-shadow: 1px 2px 2px gray;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+.pjImage{
+    width: 280px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+}
+
 /* contact */
 .contactContainer{
     position: relative;
@@ -184,7 +347,7 @@ form{
     position: absolute;
     top: 10%;
     left: 50%;
-    transform: translate(-50%,10%);
+    transform: translate(-50%,15%);
     box-shadow: 1px 1px 3px white;
     padding: 20px;
     border-radius: 10px;
